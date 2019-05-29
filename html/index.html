@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="text-align: center;" onload="MakeDataSocket()">
+    <h1 style="margin-bottom: 2em;">DIP Switch and LED States:</h1>
+    <p><b>Toggle the DIP switches on the MOD-DEV-70CR to toggle the Switches on this page.</b></p>
+    <p><b>Click on the LED switches below to toggle the LEDs on the MOD-DEV-70CR.</b></p>
+    <br />
+    <br />
+    <div style="width: 300px;height: 55px">
+        <input id="cbox1" type="checkbox" class="cbox" disabled />
+        <label for="cbox1" class="lbl diplabel">DIP Switch 1: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 1:</h4>
+                <input class="tgl tgl-skewed" id="ledcb1" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb1"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox2" type="checkbox" class="cbox" disabled />
+        <label for="cbox2" class="lbl diplabel">DIP Switch 2: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 2:</h4>
+                <input class="tgl tgl-skewed" id="ledcb2" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb2"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox3" type="checkbox" class="cbox" disabled />
+        <label for="cbox3" class="lbl diplabel">DIP Switch 3: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 3:</h4>
+                <input class="tgl tgl-skewed" id="ledcb3" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb3"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox4" type="checkbox" class="cbox" disabled />
+        <label for="cbox4" class="lbl diplabel">DIP Switch 4: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 4:</h4>
+                <input class="tgl tgl-skewed" id="ledcb4" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb4"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox5" type="checkbox" class="cbox" disabled />
+        <label for="cbox5" class="lbl diplabel">DIP Switch 5: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 5:</h4>
+                <input class="tgl tgl-skewed" id="ledcb5" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb5"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox6" type="checkbox" class="cbox" disabled />
+        <label for="cbox6" class="lbl diplabel">DIP Switch 6: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 6:</h4>
+                <input class="tgl tgl-skewed" id="ledcb6" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb6"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox7" type="checkbox" class="cbox" disabled />
+        <label for="cbox7" class="lbl diplabel">DIP Switch 7: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 7:</h4>
+                <input class="tgl tgl-skewed" id="ledcb7" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb7"></label>
+            </li>
+        </ul>
+    </div>
+    <div style="width: 300px;height: 55px">
+        <input id="cbox8" type="checkbox" class="cbox" disabled />
+        <label for="cbox8" class="lbl diplabel">DIP Switch 8: </label>
+        <ul class="tg-list ledlist">
+            <li class="tg-list-item">
+                <h4>LED 8:</h4>
+                <input class="tgl tgl-skewed" id="ledcb8" type="checkbox" onclick="SetLED(this);" />
+                <label class="tgl-btn ledlabel" data-tg-off="OFF" data-tg-on="ON" for="ledcb8"></label>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
