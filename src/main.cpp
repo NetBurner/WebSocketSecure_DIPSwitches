@@ -155,7 +155,7 @@ static void ParseInputForLedMask(char *buf, int &ledNum, bool &ledValue)
     int tempLedValue = 0;
 
     /* Print the buffer received to serial  */
-    JsonInObject.PrintObject(true);
+    // JsonInObject.PrintObject(true);
 
     /* navigate to the first element name */
     JsonInObject.GetFirst();
@@ -301,8 +301,6 @@ void SendJSONReport(int ws_fd)
 
 int MyDoWSUpgrade(HTTP_Request *req, int sock, PSTR url, PSTR rxb)
 {
-    iprintf("[MyDoWSUpgrade]\r\n");
-
     if (httpstricmp(url, "/INDEX.HTML"))
     {
         if (ws_fd < 0)
@@ -313,7 +311,6 @@ int MyDoWSUpgrade(HTTP_Request *req, int sock, PSTR url, PSTR rxb)
             {
                 bFirstRun = true;
                 ws_fd = rv;
-                iprintf("[MyDoWSUpgrade] ws_fd: %d \r\n", ws_fd);
                 NB::WebSocket::ws_setoption(ws_fd, WS_SO_TEXT);
                 OSSemPost(&SockReadySem);
                 return 2;
